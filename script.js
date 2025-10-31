@@ -64,7 +64,7 @@
     ],
     whoami: () => [
       "user: r1k4x3xpl0it (you)",
-      "role: mssali krrou kaydy3 flw9t wsfe.",
+      "role: mssali rassou kaydy3 flw9t wsfe.",
     ],
     contact: () => [
       'email: <a href="mailto:rikamodwhite@gmail.com">rikamodwhite@gmail.com</a>',
