@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Team Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="background-glow"></div>
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-icon">🛡</span>
+        <span class="brand-name">Red Team Interface</span>
+      </div>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="toggle-label">Theme</span>
+        <span class="toggle-indicator"></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">/bin/red-team</p>
+          <h1>Red Teamer<span class="cursor">_</span></h1>
+          <p class="hero-description">
+            Offensive security operator focused on realistic adversary emulation, web
+            app exploitation, and stealth tradecraft. This UI is my playground to
+            test HTML/CSS &amp; interaction skills.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-outline" href="#terminal">Open Terminal</a>
+          </div>
+        </div>
+        <div class="terminal-card" id="terminal">
+          <div class="terminal-top">
+            <div class="traffic-lights">
+              <span class="light red"></span>
+              <span class="light yellow"></span>
+              <span class="light green"></span>
+            </div>
+            <span class="terminal-title">/bin/red-team</span>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-output" id="terminalOutput" aria-live="polite"></div>
+            <form class="terminal-input" id="terminalForm" autocomplete="off">
+              <label class="sr-only" for="terminalCommand">Type a command</label>
+              <span class="prompt">$</span>
+              <input
+                id="terminalCommand"
+                name="command"
+                type="text"
+                spellcheck="false"
+                placeholder="type a command (help, clear, whoami, contact, skills)"
+                aria-label="Type a command"
+              />
+              <button class="run-btn" type="submit">Run</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section" id="skills">
+        <div class="section-heading">
+          <span class="section-eyebrow">Core Skills</span>
+          <h2>What I Operate</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Web Exploitation</h3>
+            <p>XSS, SQLi, SSRF, IDOR, AuthZ bypass, RCE</p>
+          </article>
+          <article class="skill-card">
+            <h3>Ops &amp; Tradecraft</h3>
+            <p>Phishing, initial access, C2, OPSEC</p>
+          </article>
+          <article class="skill-card">
+            <h3>Cloud &amp; APIs</h3>
+            <p>IAM misconfig, token abuse, data exfil</p>
+          </article>
+          <article class="skill-card">
+            <h3>Frontend &amp; UX</h3>
+            <p>Secure UI patterns, anti-XSS, CSP</p>
+          </article>
+          <article class="skill-card">
+            <h3>Scripting</h3>
+            <p>Python, Bash, HTML, CSS, JS</p>
+          </article>
+          <article class="skill-card">
+            <h3>Purple Mindset</h3>
+            <p>Detect/evade, logs, realistic emulation</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <span class="section-eyebrow">Selected Projects</span>
+          <h2>Operations Deck</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <span class="project-number">1</span>
+            <div class="project-meta">
+              <h3>Operation 1</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 1"></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">2</span>
+            <div class="project-meta">
+              <h3>Operation 2</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 2"></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">3</span>
+            <div class="project-meta">
+              <h3>Operation 3</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 3"></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">4</span>
+            <div class="project-meta">
+              <h3>Operation 4</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 4"></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">5</span>
+            <div class="project-meta">
+              <h3>Operation 5</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 5"></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <span class="project-number">6</span>
+            <div class="project-meta">
+              <h3>Operation 6</h3>
+              <p>Adversary emulation lab with reporting and UX micro-interactions.</p>
+            </div>
+            <div class="project-footer">
+              <span class="badge">Test</span>
+              <a href="#" class="external-link" aria-label="View project 6"></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <p>Open for collaborations, red team ops, and security research.</p>
+      <div class="footer-links">
+        <a href="rikamodwhite@gmail.com">Email</a>
+        <a href="https://https://github.com/r1k4x0d4y">GitHub</a>
+        <a href="">LinkedIn</a>
+      </div>
+      <a class="back-to-top" href="#hero">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
